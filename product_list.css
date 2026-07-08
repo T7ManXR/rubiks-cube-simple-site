@@ -1,0 +1,96 @@
+/* CSS global selectors to apply for whole page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Aldrich", sans-serif;
+    background-color: #07f190; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation bar start */
+.header {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px; 
+    width: 100%;
+}
+.top-button {
+    background-color: #ffaa00;
+    font-size: 36px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid black;
+}
+.top-button a {
+    color: black;
+}
+.top-button a:hover {
+    color: #2a3d77;
+}
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    background-color: #2a3d77;
+    padding: 30px;
+    font-weight: bold;
+    border: 5px solid black;
+}
+/* Navigation bar end */
+
+/* Title */
+.body-title {
+    text-align: center;
+    font-size: 80px;
+    color: black;
+    padding: 10px;
+    text-shadow: -5px -5px #ffffff
+}
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    margin-bottom: 100px;
+    text-decoration: underline;
+}
+
+/* Button Grid Formatting */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    width: 100%;
+    margin: auto;
+}
+.buy-button {
+    background-color: #ffaa00;
+    border: 5px solid black;
+    padding: 30px 60px;
+    font-family: 'Aldrich';
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+.buy-button:hover {
+    text-decoration: underline;
+    color:#2a3d77;
+}
+
+/* Footer */
+.footer {
+    margin-top: 100px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #2a3d77;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid black;
+}
+.footer p {
+    font-size: 50px;
+}

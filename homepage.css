@@ -1,0 +1,128 @@
+/* CSS global formatting for whole page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Aldrich", sans-serif;
+    background-color: #07f190; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation bar start */
+.header {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px; 
+    width: 100%;
+}
+.top-button {
+    background-color: #ffaa00;
+    font-size: 36px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid black;
+}
+.top-button a {
+    color: black;
+}
+.top-button a:hover {
+    color: #2a3d77;
+}
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    background-color: #2a3d77;
+    padding: 30px;
+    font-weight: bold;
+    border: 5px solid black;
+}
+/* Navigation bar end */
+
+/* Title */
+.body-title {
+    text-align: center;
+    font-size: 80px;
+    color: black;
+    padding: 10px;
+    text-shadow: -2px -2px #ffffff, 2px -2px #ffffff, -2px 2px #ffffff, 2px 2px#ffffff;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    margin-bottom: 100px;
+    text-decoration: underline;
+}
+
+/* Product Grid Row One */
+.product-grid-one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;
+    width: 100%;
+    margin: auto;
+    font-weight: bold;
+}
+.product-card {
+    background-color: #2a3d77;
+    border: 10px solid white;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.product-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.product-image img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 150px;
+}
+.buy-button {
+    background-color: #ffaa00;
+    border: 5px solid black;
+    padding: 10px 60px;
+    font-family: 'Aldrich';
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+}
+.buy-button:hover {
+    text-decoration: underline;
+    color:#2a3d77;
+}
+/* Product Grid Row One End */
+
+/* Product Grid Row Two */
+.product-grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    gap: 150px;
+    margin: auto;
+    font-weight: bold;
+}
+/* Product Grid Row Two End */
+/* Product grid for the second row uses the same class formatting as the first row, but only two items instead of three */
+
+/* Footer */
+.footer {
+    margin-top: 100px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #2a3d77;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid black;
+}
+.footer p {
+    font-size: 50px;
+}
